@@ -1,0 +1,34 @@
+.header {
+    height: 95vh; //viewport height gosterilen deviceín 95%-i,1vh-deviceín= 1% parentin olcusune gore
+    background-image: linear-gradient(to right bottom,
+     $color-primary-green, $color-primary-light-green) ,
+    url(/img/laura-chouette-2G_1l6LDqp0-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    font-family: initial;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //bcimage verdikde o shape'-de olacaq
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); //bcimage verdikde o shape'-de olacaq
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); 
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &_logo {
+        height: 8rem;
+    }
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%); /* it means that box change destination to left top */
+        text-align: center;
+        
+    }
+} 

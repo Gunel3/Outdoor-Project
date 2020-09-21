@@ -1,0 +1,58 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY MANAGER
+/*
+0 - 600px;         phone
+600px - 900px;     tablet
+900px - 1200px;    tablet landscape
+[1200px - 1800px;]  desktop {our normal styles apply}
+1800breakpoints name
+
+phone - phone
+tablet-tab-port
+tablet landscape- tab-land
+big desktop-big-desktop
+*/
+
+/*
+@mixin respond-phone {
+    @media (max-width: 600px) { @content }
+}
+*/
+
+//em is perfefct for media querries cause rem doesn't supported by some brpowsers 1em=16px //600/16=37.5em // 600px=37.5em 
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }     
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }    
+    }
+
+
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content }    
+    }
+
+
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content }    
+    }
+}
+
