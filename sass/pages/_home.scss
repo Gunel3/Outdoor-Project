@@ -9,7 +9,7 @@
     padding: 20rem;
     margin-top: 2rem;
     background-image: linear-gradient(to right bottom,
-    $color-primary-light-green, $color-primary-green),url(/img/bdjd.jpg);   
+    $color-primary-light-green, $color-primary-green),url(./img/bdjd.jpg);   
     background-size: cover;
     transform: skewY(-4deg);
     position: relative;
@@ -49,7 +49,7 @@
                             rgba($color-white, .7) 0%,
                             rgba($color-white, .7) 50%,
                             transparent 50%),
-                            url(/img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
+                            url(./img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
     background-size: 100%;
     height: 50rem;
     border-radius: 3px;
@@ -61,7 +61,7 @@
         rgba($color-white, .7) 0%,
         rgba($color-white, .7) 65%,
         transparent 65%),
-        url(/img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
+        url(./img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
 
         background-size: cover;
    }
@@ -69,7 +69,7 @@
         background-image: linear-gradient(to right,
         rgba($color-white, .7) 0%,
         rgba($color-white, .7) 100%,),
-        url(/img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
+        url(./img/zac-porter-3kKY7LCr0CU-unsplash.jpg);
    }
 
     &__form {
