@@ -8,6 +8,11 @@
     border-radius: 10rem;
     transition: all .3s;
     font-size: medium;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+  }
   }
   &:hover {
     transform: translateY(-0.5rem);
